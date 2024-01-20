@@ -1,17 +1,25 @@
+{{!-- <h1>postCard handlebars</h1> --}}
+
+<link rel="stylesheet" href="/css/main.css" />
+
 <article class="post">
-    <div class="whole-post">
-        <div class="info-section">
-            <div class="post-name">
-                <a href="/post/{{id}}" class="links">{{title}}</a>
-            </div>
-            <div class="created-by">
-                <p id="comment-subtitle">
-                    Posted by <b>{{user.username}} </b> on <b>{{formatDate created_at}}</b>
-                </p>
-            </div>
-        </div>
-        <div class="content-section">
-            <p>{{content}}</p>
-        </div>
+  <div class="whole-post">
+    <div class="info-section">
+      <div class="post-name">
+        <h2><a href="/post/{{id}}" class="links">{{title}}</a></h2>
+      </div>
+      <div class="createdBy">
+        <p id="commentSubtitle">
+          Posted by
+          <b>{{user.username}} </b>
+          {{!-- on <b>{{format_date created_at}}</b> --}}
+        </p>
+      </div>
     </div>
+    <div class="contentSection">
+      <p id="contentSection">
+        <p>{{content}}</p>
+      </p>
+    </div>
+  </div>
 </article>

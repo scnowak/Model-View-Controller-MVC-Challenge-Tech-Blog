@@ -1,6 +1,14 @@
 [
-    {
-      "title": "My test blog",
-      "description": "blogTest"
-    }
-  ]
+  {
+    "title": "First Blog Post",
+    "content": "This is the content of the first blog post.",
+    "date_created": "2023-12-30",
+    "user_id": 1
+  },
+  {
+    "title": "Second Blog Post",
+    "content": "This is the content of the second blog post.",
+    "date_created": "2023-12-31",
+    "user_id": 2
+  }
+]

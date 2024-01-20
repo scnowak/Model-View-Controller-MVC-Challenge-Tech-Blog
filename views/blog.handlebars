@@ -1,0 +1,33 @@
+{{!-- <h1>blog handlebars</h1> --}}
+
+<h3 class="specific-blog">{{blog.title}}</h3>
+<p>Written by: {{user.name}} </p>
+<p>Created on: {{format_date blog.date_created}}</p>
+<p>Description: {{blog.description}}</p>
+
+ <div class="bg-light p-2">
+    <form id="comment-form">
+        <div class="d-flex flex-row align-items-start">
+            {{user.name}}
+            <textarea id="comment-text" class="form-control ml-1 shadow-none textarea" placeholder="Enter Comment Here..."></textarea></div>
+        <div class="mt-2 text-right">
+            <button class="btn btn-primary btn-sm shadow-none" type="submit" id="postCommentBtn">Post comment</button>
+            <button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button>
+        </div>
+    </form>    
+</div>
+
+<div>
+    {{#each comments as |comment|}}
+    <p> {{comment.text}}</p>
+    <p> Commented by: {{comment.user.name}}</p>
+    <p> Comment Date: {{comment.comment_date}}</p>
+    {{/each}}
+</div>
+
+<div id="commentSection" class="mt-3">
+
+</div>
+
+<script src="/js/comment.js"></script>
+<script src="/js/profile.js"></script>

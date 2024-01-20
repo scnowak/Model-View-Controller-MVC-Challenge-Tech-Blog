@@ -1,0 +1,89 @@
+* {
+    background-image: url("../images/bkgrnd2.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  header {
+    color: rgba(193, 168, 208, 0.736);
+    text-align: center;
+    border-bottom: dotted 2px #ab0875;
+  }
+
+  a {
+    text-shadow: 4px 4px 8px #ab0875;
+    color: rgb(248, 246, 250);
+  }
+
+  label,
+  h3,
+  input {
+    text-shadow: 4px 4px 8px #ab0875;
+    color: rgb(246, 241, 241);
+    text-align: center;
+    font-size: 40px;
+  }
+
+  button {
+    font-style: italic;
+    text-shadow: 6px 6px 10px #ab0875;
+    color: rgb(246, 241, 241);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  h1,
+  header p {
+    text-shadow: 4px 4px 8px #ab0875;
+  }
+  
+  h1 {
+    font-size: 70px;
+  }
+  
+  p {
+    font-size: 25px;
+  }
+  
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    list-style: none;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .postCard{
+
+    background-color: blanchedalmond !important;
+  }
+  #post{
+    background-color: blanchedalmond !important;
+  }
+
+  /* #commentSubtitle{
+
+    background-color: blanchedalmond !important;
+    background-image: url("../images/turquoise.png");
+  } */
+
+  .btn {
+    text-shadow: 4px 4px 8px #ab0875;
+    color: rgb(5, 1, 9);
+  }
+
+  #edit-link{
+    text-shadow: 4px 4px 8px #ab0875;
+    color: rgb(5, 1, 9);
+  }
+
+  /* #contentSection{
+
+    background-color: blanchedalmond !important;
+    background-image: url("../images/turquoise.png");
+  } */

@@ -1,0 +1,36 @@
+{{!-- <h1>dashboard handlebars</h1> --}}
+
+<section class="new-post-section">
+    <label>
+        POST TITLE
+    
+    </label>
+    <input type="text" id="newPost"><br>
+
+    <label>
+        Add Your New Comment
+    </label>
+
+    <input type="text" id="content"><br>
+
+
+
+    <button type="submit" class="btn" id="create-new-post">+ Create new post</button>
+</section>
+
+
+{{#if posts.length}}
+<section>
+    <h3> Dashboard</h3>
+    <ul class="post-list">
+      <h3>  {{#each posts as |post|}} </h3>
+        <li class="postCard">
+          {{> postCard post}}
+            <h2><a href="/dashboard/edit/{{post.id}}" class="edit-link">edit post</a></h2>
+        </li>
+        {{/each}}
+    </ul>
+</section>
+{{/if}}
+
+<script src="/js/create-post.js"></script>

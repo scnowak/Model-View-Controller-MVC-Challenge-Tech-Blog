@@ -1,7 +1,18 @@
 [
 	{
 		"blog_id": 1,
-		"comment_description": "My Comment Test",
+		"content": "My Comment Test",
 		"user_id": 1
+	},
+	{
+		"blog_id": 2,
+		"content": "Second Comment Test",
+		"user_id": 2
+	},
+	{
+		"blog_id": 3,
+		"content": "Third Comment Test",
+		"user_id": 3
 	}
+
 ]

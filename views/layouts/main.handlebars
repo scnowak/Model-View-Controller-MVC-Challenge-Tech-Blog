@@ -2,40 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tech Blog</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- scn -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- scn -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!-- scn -->
+
+  <title>TeChIe B*L*O*G</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>
-                <a href="/">home</a>
-            </h1>
-            <nav>
-                {{#if loggedIn}}
-                <a href="/dashboard">dashboard</a>
-                <button id="logout" class="btn-no-style logout">logout</button>
-                {{else}}
-                <a href="/login">login</a>
-                {{/if}}
-            </nav>
-        </header>
-        <div class="site-row">
-            <div class="site-name">
-                <h1>The Tech Blog</h1>
-            </div>
-        </div>
-        <main>
-            {{{ body }}}
-        </main>
-    </div>
 
-    {{#if loggedIn}}
-    <script src="/javascript/logout.js"></script>
-    {{/if}}
+  {{!-- <h1>main handlebars</h1> --}}
+
+  <header>
+    <h1>TECH B*L*O*G</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="/">~home~</a>
+      </li>
+      {{#if loggedIn}}
+      <li>
+        <a href="/dashboard">~dashboard~</a>
+      </li>
+
+      <li>
+        <!-- Conditionally render login or logout links -->
+        <button class="no-button" id="logout">~Logout~</button>
+      </li>
+      {{else}}
+      <li>
+        <a href="/login">~login~</a>
+      </li>
+      {{/if}}
+    </ul>
+  </nav>
+
+  <main class="container container-fluid mt-5">
+    <!-- Render the sub layout -->
+    {{{ body }}}
+  </main>
+  <footer>
+
+  </footer>
+
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
